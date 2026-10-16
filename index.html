@@ -1,43 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pertama Saya</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hakikat Manusia dalam Perspektif Al-Qur’an — Kelompok 4</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Bagian Header / Navigasi -->
-    <header>
-        <h1>Selamat Datang di Website Saya</h1>
-        <nav>
-            <ul>
-                <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#tentang">Tentang Saya</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
-        </nav>
+  <main class="deck" aria-label="Presentasi">
+    <header class="topbar">
+      <span class="eyebrow">KEMANUSIAAN DAN KEIMANAN</span>
+      <span class="counter" id="counter">01 / 07</span>
     </header>
-
-    <!-- Bagian Konten Utama -->
-    <main>
-        <section id="beranda">
-            <h2>Halo, Dunia!</h2>
-            <p>Ini adalah contoh halaman <strong>index.html</strong> sederhana yang menjadi halaman default pada sebuah website.</p>
-            <button onclick="alert('Halo! Terima kasih sudah mampir.')">Klik Saya</button>
-        </section>
-
-        <section id="tentang">
-            <h2>Tentang Saya</h2>
-            <p>Saya sedang belajar membuat struktur dasar menggunakan HTML.</p>
-        </section>
-    </main>
-
-    <!-- Bagian Footer -->
-    <footer>
-        <p>&copy; 2026 Website Saya. Dibuat dengan HTML.</p>
-    </footer>
-
+    <section class="slide" id="slide" aria-live="polite"></section>
+    <nav class="controls" aria-label="Navigasi slide">
+      <button id="prev" type="button" aria-label="Slide sebelumnya">← Sebelumnya</button>
+      <div class="dots" id="dots"></div>
+      <button id="next" type="button" aria-label="Slide berikutnya">Berikutnya →</button>
+    </nav>
+    <footer><span>KELOMPOK 4</span><span>Gunakan ← → pada keyboard untuk navigasi</span></footer>
+  </main>
+  <script src="slides.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
